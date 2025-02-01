@@ -1,0 +1,250 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins";
+  width: 100%;
+  height: 100%;
+  color: black;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+/* DONT DELETE*/
+.displayHam{
+
+  display: none;
+}
+/*-------------*/
+
+:root{
+  --main-color: #D9392B;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 10vh 20vh;
+  gap: 5vh;
+  z-index: 1;
+}
+
+.background{
+  z-index: 0;
+}
+
+.main-left {
+  flex: 1;
+}
+
+.main-left h1 {
+  font-size: 2.9rem;
+  width: 80%;
+  font-weight: bolder;
+  padding-top: 5vh;
+}
+
+.main-left p {
+  font-weight: 700;
+}
+
+.main-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-right .Bg {
+  width: 80vh;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  margin-top: 10vh;
+}
+
+.main-right .css, 
+.main-right .octa {
+  position: absolute;
+  width: 45vh;
+  height: auto;
+  transition: top 0.6s ease-in-out, left 0.6s ease-in-out, right 0.6s ease-in-out, z-index 0s 0.4s;
+}
+
+.main .main-right .css {
+  top: 18%;
+  left: 34%;
+  z-index: 2;
+}
+
+.main .main-right .octa {
+  top: 42%;
+  right: 36%;
+  z-index: 3;
+}
+
+.main .main-right:hover .css {
+  top: 42%;
+  left: 8%;
+  z-index: 3;
+}
+
+.main .main-right:hover .octa {
+  top: 18%;
+  left: 34%;
+  z-index: 2;
+}
+
+span {
+  color: var(--main-color);
+}
+
+.main-left .main-btn {
+  position: relative;
+  margin: 5vh auto;
+  padding: 0.8rem 3.5rem;
+  border: transparent;
+  border-radius: 0.7em;
+  color: white;
+  background-color: var(--main-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 6px 6px 12px #c5c5c5;
+  z-index: 10;
+  font-size: 1rem;
+}
+
+.main-btn:active {
+  transform: translateY(5px);
+  transition: 200ms;
+}
+
+.lines{
+  z-index: 0;
+  margin-top: -75vh;
+  width: 200vh;
+}
+
+.expect {
+  text-align: center;
+}
+
+.expect img{
+  width: 110vh;
+  margin: 12vh 14vh;
+}
+
+.explore-background{
+  background-color: #343235;
+  padding: 10rem auto;
+}
+
+.Explore{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.Explore .border{
+  width: 140vh;
+  height: auto;
+  margin: 20vh 0;
+}
+
+.explore-container{
+  display: flex;
+  background-color: white;
+  max-width: 125vh;
+  max-height: 48vh;
+  height: 100%;
+  width: 100%;
+  margin: -70vh auto 5vh;
+  border-radius: 1rem 10rem 1rem 10rem;
+  gap: 20vh;
+}
+
+.explore-container .ALGO,
+.explore-container .BSIT{
+  width: 28vh;
+}
+
+.explore-container .BSIT{
+  margin: -5vh -30vh 0 0;
+  z-index: 0;
+  position: relative;
+}
+
+.explore-container .ALGO{
+  z-index: 1;
+  position: relative;
+}
+.explore-right{
+  width: 50%;
+  text-align: left;
+  justify-content: center;
+  margin: 2rem auto 1rem;
+  height: fit-content;
+}
+
+.explore-right h1{
+  font-size: 2.7rem;
+}
+
+.explore-left{
+  width: 50%;
+  max-width: 22vh;
+}
+
+.explore-right h1{
+  margin-bottom: 1rem;
+}
+
+.explore-right .btn-learn-more{
+  padding: 1rem 4rem;
+  margin: 1rem auto;
+  border-radius: 1em;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 6px 6px 12px #c5c5c5;
+  border: transparent;
+}
+
+.btn-learn-more:active {
+  transform: translateY(5px);
+  transition: 200ms;
+}
+
+.ccsfest{
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+.ccsfest h1{
+  margin: 20rem 0 5rem 0;
+  font-size: 3.2rem;
+}
+
+.ccsfest img{
+  max-width: 100vh;
+  width: 100%;
+}
